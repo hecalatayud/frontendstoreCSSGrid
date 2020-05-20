@@ -1,0 +1,52 @@
+:root {
+    --font-main: 'Staatliches', cursive;
+    --color-primary: #9c27b0;
+    --color-primary-dark: #89119d;
+    --color-secondary: #ffce00;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: var(--color-primary);
+    line-height: 2;
+    font-size: 2rem;
+}
+
+.header {
+    display: grid;
+    justify-content: center;
+    padding: 3rem 0;
+}
+
+.bar {
+    background-color: var(--color-primary-dark);
+    padding: 1rem 0;
+}
+
+.bar nav {
+    display: grid;
+    grid-template-columns: repeat(2, 20rem);
+    justify-content: center;
+}
+
+.bar nav a {
+    font-family: var(--font-main);
+    font-size: 3rem;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}
+
+.bar nav a:hover {
+    color: var(--color-secondary);
+}
